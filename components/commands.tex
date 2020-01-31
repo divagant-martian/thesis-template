@@ -1,0 +1,46 @@
+% !TEX root = ../main.tex
+% Included by MAIN.TEX
+
+%-------------------------------------------------------------
+%                      Own Commands
+%-------------------------------------------------------------
+
+% some abreviations ------------------------------------------
+\newcommand{\Reg}{$^{\textregistered}$}
+\newcommand{\reg}{$^{\textregistered}$ }
+\newcommand{\Tm}{\texttrademark}
+\newcommand{\tm}{\texttrademark~}
+\newcommand {\bsl} {$\backslash$}
+
+% formating --------------------------------------------------
+% Theorem & Co environments and counters
+\newtheorem{theorem}{Theorem}[chapter]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{remark}[theorem]{Remark}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{equat}[theorem]{Equation}
+\newtheorem{example}[theorem]{Example}
+%\newtheorem{algorithm}[theorem]{Algorithm}
+
+% inserting figures
+\newcommand{\insertfigure}[4]{ % Filename, Caption, Label, Width % of textwidth
+    \begin{figure}[htbp]
+        \begin{center}
+            \includegraphics[width=#4\textwidth]{#1}
+        \end{center}
+        \vspace{-0.4cm}
+        \caption{#2}
+        \label{#3}
+    \end{figure}
+}
+
+% comment that appears on the border - very practical !!!
+\newcommand{\comment}[1]{\marginpar{\raggedright \noindent \footnotesize {\textsl{#1}} }}
+
+% page clearing
+\newcommand{\clearemptydoublepage}{%
+  \ifthenelse{\boolean{@twoside}}{\newpage{\pagestyle{empty}\cleardoublepage}}%
+             {\clearpage}}
+
+\newcommand{\etAl}{\emph{et al.}\mbox{ }}
