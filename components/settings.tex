@@ -18,7 +18,14 @@
 \ifoot[\footertext]{\footertext} % \footertext set in INFO.TEX
 
 % Set the font for the section headings
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{tocloft}
+\setlength\cftparskip{0.3\baselineskip}
+\setlength\cftbeforechapskip{0pt}
+\linespread{1.077}
 \usepackage{makecell}
+\usepackage[titletoc]{appendix}
 \renewcommand{\sectfont}{\normalfont \bfseries}
 
 % Conditional commands in LaTeX documents, used for the \clearemptydoublepage.
@@ -150,11 +157,11 @@
 \definecolor{Pantone542}{HTML}{64A0C8}  % TUM accent light blue
 
 % Color for the hyperlinks (e.g. table of contents)
-\def\colorLinks{MidnightBlue}
+\def\colorLinks{PineGreen}
 % Color for the web links
-\def\colorUrl{MidnightBlue}
+\def\colorUrl{PineGreen}
 % Color for the citations
-\def\colorCitations{MidnightBlue}
+\def\colorCitations{PineGreen}
 
 %--------------------------------------------------
 % PDF output

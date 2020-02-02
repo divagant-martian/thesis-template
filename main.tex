@@ -33,9 +33,10 @@
               headsepline,
               parskip=half,
               %% footsepline,
-              BCOR=12mm,
-              DIV=13,
-              %% twoside=false,
+              BCOR=0mm,
+              appendixprefix=true,
+              DIV=14,
+              twoside=false,
               bibliography=totoc]{scrbook}
 
 % KOMA scrbook options:
@@ -60,16 +61,32 @@
  \input{components/titlepage}
  \input{components/disclaimer}
  \input{components/acknowledgements}
- \input{components/quote}
- \input{components/abstract}
 
+ \clearemptydoublepage
  \tableofcontents
 
+ \clearemptydoublepage
  \mainmatter
  \input{components/text}
 
  \clearemptydoublepage
+ \phantomsection{}
+ \addcontentsline{toc}{chapter}{Índice de figuras}
+ \listoffigures
 
+ \clearemptydoublepage
+ \renewcommand\listtablename{Índice de tablas}
+ \phantomsection{}
+ \addcontentsline{toc}{chapter}{Índice de tablas}
+ \listoftables
+
+ \clearemptydoublepage
  \bibliography{bibliography/literature}
+
+ \clearemptydoublepage
+ \input{appendices/text}
+
+ \clearemptydoublepage
+
 
 \end{document}
