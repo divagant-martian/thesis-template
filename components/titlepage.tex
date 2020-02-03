@@ -15,28 +15,28 @@
 
 \vspace{4cm}
 \begin{center}
-    \includegraphics[width=4cm]{\universityLogo}\\
     \vspace{5mm}
-    \LARGE \program \\
-    \vspace{0.5cm}
-    \large \university
+    \Large \program \\
+    \Large \university
 \end{center}
 
-\vspace{20mm}
+\vspace{40mm}
 \begin{center}
     {\Large \doctype}\\
-    \vspace{10mm}
-    {\Huge \strut\title\strut}\\
-    \vspace{30mm}
-
-    \begin{tabular}{ll}
-      \Large Autores:         & \Large \makecell[tl]{\author}\\[25mm]
-      \Large Evaluadores:     & \Large \makecell[tl]{\examiners}\\[15mm]
-      \Large Asesores:        & \Large \makecell[tl]{\assistantAdvisor} \\[15mm]
-      \Large Presentado:      & \Large \date
-    \end{tabular}
+    \vspace{5mm}
+    {\Large \strut\textbf\title\strut}\\
 
     \vspace{\fill}
+    \bgroup
+        \def\arraystretch{2}
+        \begin{tabular}{rl}
+            \Large Autores         & \Large \makecell[tl]{\firstauthor\\\secondauthor\\\thirthauthor\\\fourthauthor}\\
+            \Large Evaluadores     & \Large \makecell[tl]{\examiners}\\
+            \Large Asesores        & \Large \makecell[tl]{\assistantAdvisor}\\
+            \Large Presentado      & \Large \makecell[tl]{\city\\\date}
+        \end{tabular}
+    \egroup
+
     %% \includegraphics[width=4cm]{\programLogo}
 \end{center}
 
