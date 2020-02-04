@@ -15,37 +15,44 @@
 % formating --------------------------------------------------
 % Theorem & Co environments and counters
 \newtheorem{theorem}{Theorem}[chapter]
-\newtheorem{lemma}[theorem]{Lemma}
-\newtheorem{corollary}[theorem]{Corollary}
-\newtheorem{remark}[theorem]{Remark}
-\newtheorem{definition}[theorem]{Definition}
-\newtheorem{equat}[theorem]{Equation}
-\newtheorem{example}[theorem]{Example}
+\newtheorem{lemma}[theorem]{Lema}
+\newtheorem{corollary}[theorem]{Corolario}
+\newtheorem{remark}[theorem]{Nota}
+\newtheorem{definition}[theorem]{Definición}
+\newtheorem{equat}[theorem]{Equación}
+\newtheorem{example}[theorem]{Ejemplo}
 %\newtheorem{algorithm}[theorem]{Algorithm}
 
+\newcommand{\feedback}[1]{\marginpar{\pdfcomment[color=Apricot,opacity=0.9,open=false,subject={Top2},author={Feedback},hoffset=-5pt]{#1}}}
+\newcommand{\feedbackans}[1]{\marginpar{\pdfcomment[color=CornflowerBlue,opacity=0.9,hoffset=10pt,open=false,subject={Top2},author={Grupo}]{#1}}}
+\newcommand\tinylipsum{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec mi et neque pharetra sollicitudin}
+\newcommand{\addcaption}[1]{\vspace{-0.4cm}\caption{#1}}
 % inserting figures
 \newcommand{\insertfigure}[4]{ % Filename, Caption, Label, Width % of textwidth
     \begin{figure}[htbp]
         \begin{center}
             \includegraphics[width=#4\textwidth]{#1}
         \end{center}
-        \vspace{-0.4cm}
-        \caption{#2}
+        \addcaption{#2}
         \label{#3}
     \end{figure}
 }
 
 \newcommand{\inserttable}[4]{ % Caption, tabular params, the table
+  \vspace{0.2cm}
   \begin{table}[hbp]
     \begin{center}
       \begin{tabular}{#2}
         \toprule
         #3
         \bottomrule
-      \end{tabular}\caption{#1}\label{#4}\par
+      \end{tabular}
     \end{center}
+    \addcaption{#1}\label{#4}\par
   \end{table}
 }
+
+\newcommand{\Fig}[1]{Figura \ref{#1}}
 % comment that appears on the border - very practical !!!
 \newcommand{\comment}[1]{\marginpar{\raggedright \noindent \footnotesize {\textsl{#1}} }}
 
