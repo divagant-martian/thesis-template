@@ -35,6 +35,17 @@
     \end{figure}
 }
 
+\newcommand{\inserttable}[4]{ % Caption, tabular params, the table
+  \begin{table}[hbp]
+    \begin{center}
+      \begin{tabular}{#2}
+        \toprule
+        #3
+        \bottomrule
+      \end{tabular}\caption{#1}\label{#4}\par
+    \end{center}
+  \end{table}
+}
 % comment that appears on the border - very practical !!!
 \newcommand{\comment}[1]{\marginpar{\raggedright \noindent \footnotesize {\textsl{#1}} }}
 
