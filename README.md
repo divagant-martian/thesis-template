@@ -1,6 +1,5 @@
-# key-splitting-thesis-doc
+# A template PROPOSAL for the capstone projects in MINE-Uniandes
 
-Doc for my MSc thesis
 Template: https://github.com/waltsims/TUM_Thesis_Template_CSE
 Install pygmentize (`pikaur -S pygmentize`)
 Minted fails? Remove `_minted*`
