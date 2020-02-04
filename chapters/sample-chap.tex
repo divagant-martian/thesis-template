@@ -11,22 +11,29 @@
 
 \tinylipsum
 \begin{enumerate}
-	\item \tinylipsum
-	\item \tinylipsum
-	\item \tinylipsum
-	\item \tinylipsum!
+  \item \tinylipsum
+    \begin{enumerate}
+      \item \tinylipsum
+      \item \tinylipsum!
+    \end{enumerate}
+  \item \tinylipsum
+    \begin{itemize}
+      \item list
+      \item things!
+    \end{itemize}
+  \item \tinylipsum!
 \end{enumerate}
 
 \begin{itemize}
-	\item list
-	\item all
-	\item the
-	\item things!
+  \item list
+  \item all
+  \item the
+  \item things!
 \end{itemize}
 \tinylipsum
 
-\section*{Comntarios al margen}
-Texto acá \comment{Comentarios allá}
+\section*{Comentarios al margen}
+Texto acá \comment{Comentarios allá} \blindtext
 
 \section*{Figuras}
 % Filename, Caption, Label, Width % of textwidth
@@ -57,10 +64,10 @@ Texto acá \comment{Comentarios allá}
 
 Code can be made using the package
 \href{https://www.sharelatex.com/learn/Code\_Highlighting\_with\_minted}{Minted}.
+An example of which of can be found below (see Source Code \ref{lst:nice_listing})
 
-An exaple of which of can be found below (see Source Code \ref{lst:nice_listing})
+\begin{code} % code to allow it ot break pages, listing to avoid it
 
-\begin{listing}[H]
 	%the language syntax can be declared here.
 	\begin{minted}{python}
 	import numpy as np
@@ -95,7 +102,7 @@ An exaple of which of can be found below (see Source Code \ref{lst:nice_listing}
 	\end{minted}
   \addcaption{My nice listing}
   \label{lst:nice_listing}
-\end{listing}
+\end{code}
 
 \section*{Anotaciones sobre el pdf}
 

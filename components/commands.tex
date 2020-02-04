@@ -35,7 +35,7 @@
 
 % inserting figures
 \newcommand{\insertfigure}[4]{ % Filename, Caption, Label, Width % of textwidth
-    \begin{figure}[htbp]
+    \begin{figure}[H]
         \begin{center}
             \includegraphics[width=#4\textwidth]{#1}
         \end{center}
@@ -46,7 +46,7 @@
 
 \newcommand{\inserttable}[4]{ % Caption, tabular params, the table
   \vspace{0.2cm}
-  \begin{table}[hbp]
+  \begin{table}[H]
     \begin{center}
       \begin{tabular}{#2}
         \toprule

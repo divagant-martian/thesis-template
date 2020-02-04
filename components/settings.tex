@@ -92,6 +92,7 @@
 % TeX fonts from the American Mathematical Society (recommended)
 \usepackage{amsfonts}
 
+\usepackage{FiraMono}
 % Some extra math symbols (optional)
 % \usepackage{amssymb}
 
@@ -110,11 +111,12 @@
 % \usepackage{listings} % (optional - alternative)
 \usepackage[newfloat]{minted} % (recommended)
 % Set global Minted options
-\setminted{linenos, autogobble, frame=lines, framesep=2mm}
+\setminted{linenos, autogobble, frame=lines, framesep=2mm, fontsize=\footnotesize}
+\usemintedstyle{autumn}
 % Inline C++ (optional)
 \newcommand{\incpp}[1]{\mintinline{c++}{#1}}
 \newenvironment{code}{\captionsetup{type=listing}}{}
-\SetupFloatingEnvironment{listing}{name=Source Code}
+\SetupFloatingEnvironment{listing}{name=Código}
 
 % Typeset algorithms - pseudocode (optional)
 % \usepackage{algorithmicx}
