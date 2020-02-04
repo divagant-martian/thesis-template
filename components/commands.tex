@@ -23,10 +23,16 @@
 \newtheorem{example}[theorem]{Ejemplo}
 %\newtheorem{algorithm}[theorem]{Algorithm}
 
+% Comentarios sobre el PDF para anotar feedback de las plenarias
 \newcommand{\feedback}[1]{\marginpar{\pdfcomment[color=Apricot,opacity=0.9,open=false,subject={Top2},author={Feedback},hoffset=-5pt]{#1}}}
 \newcommand{\feedbackans}[1]{\marginpar{\pdfcomment[color=CornflowerBlue,opacity=0.9,hoffset=10pt,open=false,subject={Top2},author={Grupo}]{#1}}}
+
+% Mini lipsum para texto de relleno
 \newcommand\tinylipsum{Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Etiam lobortis facilisis sem. Nullam nec mi et neque pharetra sollicitudin}
+
+% Caption near to the thing
 \newcommand{\addcaption}[1]{\vspace{-0.4cm}\caption{#1}}
+
 % inserting figures
 \newcommand{\insertfigure}[4]{ % Filename, Caption, Label, Width % of textwidth
     \begin{figure}[htbp]
@@ -52,7 +58,16 @@
   \end{table}
 }
 
-\newcommand{\Fig}[1]{Figura \ref{#1}}
+% Referenciar tablas e figuras de forma más estética
+\newcommand{\rFig}[1]{Figura \ref{#1}}
+\newcommand{\rfig}[1]{figura \ref{#1}}
+\newcommand{\rTab}[1]{Tabla \ref{#1}}
+\newcommand{\rtab}[1]{tabla \ref{#1}}
+\newcommand{\rSec}[1]{Sección \ref{#1}}
+\newcommand{\rsec}[1]{sección \ref{#1}}
+\newcommand{\rChap}[1]{Capítulo \ref{#1}}
+\newcommand{\rchap}[1]{capítulo \ref{#1}}
+
 % comment that appears on the border - very practical !!!
 \newcommand{\comment}[1]{\marginpar{\raggedright \noindent \footnotesize {\textsl{#1}} }}
 
